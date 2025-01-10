@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "efb159fc-a1e6-4a09-9d64-40f4a133ccbe",
+		"name": "jsonPlaceHolder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37987653",
+		"_collection_link": "https://doorehami.postman.co/workspace/doorehami-Workspace~66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-efb159fc-a1e6-4a09-9d64-40f4a133ccbe?action=share&source=collection_link&creator=37987653"
+	},
+	"item": [
+		{
+			"name": "infoHolder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{jsonplaceholder}}posts",
+					"host": [
+						"{{jsonplaceholder}}posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "infoWithId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{jsonplaceholder}}posts/2",
+					"host": [
+						"{{jsonplaceholder}}posts"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createHolder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 11,\r\n    \"title\": \"qui est noi esse\",\r\n    \"body\": \"est rerum tempore vitae vitae vitae\\nsequi sint... \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{jsonplaceholder}}posts",
+					"host": [
+						"{{jsonplaceholder}}posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putHolder",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"id\": 2,\r\n    \"title\": \"qui est esse esse esse\",\r\n    \"body\" : \"ojogduii\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{jsonplaceholder}}posts/2",
+					"host": [
+						"{{jsonplaceholder}}posts"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patchHolder",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"id\": 2,\r\n    \"title\": \"jafer teslim ol etrafin sarili \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{jsonplaceholder}}posts/2",
+					"host": [
+						"{{jsonplaceholder}}posts"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
