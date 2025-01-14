@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "3d3552a7-4be5-40aa-8a8d-e95290cebaf4",
-		"name": "jsonPlaceHolder Copy 4",
+		"_postman_id": "2e0c043f-774a-4704-a2c6-fb37283098af",
+		"name": "jsonPlaceHolder Copy 5",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37987653",
-		"_collection_link": "https://doorehami.postman.co/workspace/MyWorkspace~66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-3d3552a7-4be5-40aa-8a8d-e95290cebaf4?action=share&source=collection_link&creator=37987653"
+		"_collection_link": "https://doorehami.postman.co/workspace/MyWorkspace~66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-2e0c043f-774a-4704-a2c6-fb37283098af?action=share&source=collection_link&creator=37987653"
 	},
 	"item": [
 		{
@@ -54,7 +54,10 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"pm.environment.get(\"variable_key\");\r",
+							"pm.collectionVariables.get(\"variable_key\");\r",
+							"pm.variables.get(\"variable_key\");"
 						],
 						"type": "text/javascript",
 						"packages": {}
