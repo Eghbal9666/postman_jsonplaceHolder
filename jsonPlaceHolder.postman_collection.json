@@ -1,14 +1,28 @@
 {
 	"info": {
-		"_postman_id": "efb159fc-a1e6-4a09-9d64-40f4a133ccbe",
-		"name": "jsonPlaceHolder",
+		"_postman_id": "55c05039-93b2-4226-8248-319d7c6fbed9",
+		"name": "jsonPlaceHolder Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37987653",
-		"_collection_link": "https://doorehami.postman.co/workspace/doorehami-Workspace~66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-efb159fc-a1e6-4a09-9d64-40f4a133ccbe?action=share&source=collection_link&creator=37987653"
+		"_collection_link": "https://doorehami.postman.co/workspace/MyWorkspace~66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-55c05039-93b2-4226-8248-319d7c6fbed9?action=share&source=collection_link&creator=37987653"
 	},
 	"item": [
 		{
 			"name": "infoHolder",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -23,6 +37,20 @@
 		},
 		{
 			"name": "infoWithId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
