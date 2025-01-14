@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "55c05039-93b2-4226-8248-319d7c6fbed9",
-		"name": "jsonPlaceHolder Copy",
+		"_postman_id": "3d3552a7-4be5-40aa-8a8d-e95290cebaf4",
+		"name": "jsonPlaceHolder Copy 4",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37987653",
-		"_collection_link": "https://doorehami.postman.co/workspace/MyWorkspace~66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-55c05039-93b2-4226-8248-319d7c6fbed9?action=share&source=collection_link&creator=37987653"
+		"_collection_link": "https://doorehami.postman.co/workspace/MyWorkspace~66e70c7e-0d5e-45fa-8f74-72c93165ba9c/collection/37987653-3d3552a7-4be5-40aa-8a8d-e95290cebaf4?action=share&source=collection_link&creator=37987653"
 	},
 	"item": [
 		{
@@ -14,6 +14,16 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"try {\r",
+							"    const response = await pm.sendRequest({\r",
+							"        url: \"https://postman-echo.com/get\",\r",
+							"        method: \"GET\"\r",
+							"    });\r",
+							"\r",
+							"    console.log(response.json());\r",
+							"} catch (err) {\r",
+							"    console.error(err);\r",
+							"}\r",
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
